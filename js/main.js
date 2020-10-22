@@ -29,11 +29,11 @@ function computerNumber(min, max) {
 var somma = userNum + computerNum;
 console.log('La somma è: '+ somma);
 
-// var sommaPariDispari = checkEven(somma);
+var sommaPariDispari = checkEven(somma);
 // console.log(sommaPariDispari);
 
 // Chi vince?
-if (userPariDispari === 'pari' && checkEven(somma) ) {
+if ( (userPariDispari === 'pari' && sommaPariDispari ) || (userPariDispari === 'dispari' && !sommaPariDispari ) ) {
    console.log('Il vincitore è il giocatore');
 
 } else {
